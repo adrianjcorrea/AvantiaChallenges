@@ -1,4 +1,6 @@
-Given a string representation of a 2d map, return the number of islands in the map.
+//###ISLAND COUNT####
+
+//Given a string representation of a 2d map, return the number of islands in the map.
 
 //Land spaces are denoted by a zero.
 //Water is denoted by a dot.
