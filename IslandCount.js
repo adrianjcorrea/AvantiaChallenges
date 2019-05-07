@@ -36,3 +36,19 @@
 //..000.
 //.0....
 //..000.
+
+function create2DMatrix(strMap){
+  //Create an empty array as place holder for \n rows as a new array.
+  let matrix = [];
+
+  //Split string by \n split() to return an array with splitted values.
+  //Using forEach method to iterate returned array of strMap.split(\n)
+  strMap.split("\n").forEach( row =>
+    //Splitting each row at index and pushing that returned array to matrix array.
+    matrix.push(row.split(''))
+  )
+  //returnin matrix;
+  return matrix;
+}
+
+create2DMatrix("..000.\n..000.\n..000.\n.0....\n..000.")
