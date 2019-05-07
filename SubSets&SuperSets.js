@@ -44,3 +44,25 @@
 //
 //isSupersetOf(A,B) // -> false
 //isSupersetOf(B,A) // -> true
+
+//Using constructor method new to create sets.
+const set1 = new Set([1, 2, 'hello']);
+const set2 = new Set([1, 2, 3, 'hello']);
+
+
+//This function will check if first paramater(A) set is subSet of second parameter(B).
+function isSubset(a, b){
+
+}
+
+//Invoking function to be runned
+isSubset(set1, set2), //Should return TRUE.
+isSubset(set1, set2), //Should return FALSE.
+
+//This function will check if first paramater(A) set is superSet of second parameter(B).
+function isSuperSet(a, b){
+
+}
+
+isSuperSet(set1, set2) //Should return FALSE.
+isSuperSet(set2, set1) //Should return TRUE.
