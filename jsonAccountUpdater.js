@@ -24,17 +24,20 @@
 
 //The function accepts a list of `"Logons"` that is a JSON object:
 
-
-//var logons = { "Logons" : [
-//                     {
-//                        "Id": 21,
-//                        "Name": "John Shepherd",
-//                        "Date" : new Date(2017, 1, 14, 16, 15, 6, 111)
-//                    },
-//                    {
-//                        ...
-//                    }]
-//                }
+//Logons object.
+var logons = { "Logons" : [
+                  {
+                        "Id": 21,
+                        "Name": "John Shepherd",
+                        "Date" : new Date(2017, 1, 14, 16, 15, 6, 111)
+                    },
+                    ,
+                {
+                    "Id": 22,
+                    "Name": "Adrian Correa",
+                    "Date": new Date(2017, 1, 15, 12, 34, 28, 821)
+                }]
+                }
 
 
 //The updates must follow this pattern:
@@ -46,3 +49,8 @@
 //If `"LastLogon"` is older than the logon `"Date"` it will be set to the logon `"Date"`.
 //If `"LastLogon"` is older than the logon `"Date"` the `"Name"` will be set to the logon `"Name"` when not empty.
 //Accounts are returned ordered by `"Id"` ascending, but they are not necessarily ordered when they are passed as a parameter.
+
+//function to update accounts
+function uaccountsUpdate(accounts, logons){
+
+}
