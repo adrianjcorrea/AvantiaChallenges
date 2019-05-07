@@ -37,17 +37,13 @@
 //.0....
 //..000.
 
-function create2DMatrix(strMap){
-  //Create an empty array as place holder for \n rows as a new array.
-  let matrix = [];
-
+function IslandCount(strMap){
   //Split string by \n split() to return an array with splitted values.
-  //Using forEach method to iterate returned array of strMap.split(\n)
-  strMap.split("\n").forEach( row =>
-    //Splitting each row at index and pushing that returned array to matrix array.
-    matrix.push(row.split(''))
-  )
-
+  strMap = strMap.split("\n");
+  // Looping thru splitted strMap and splitting each string by character.
+  for(var i = 0; i < strMap.length; i++) {
+    strMap[i] =  strMap[i].split('');
+  }
   //This function defines border of matrix
   function dfs(i, j, matrix) {
     //If it gets to edge of matrix it will change i and j value ( Changing starting point location)
@@ -77,6 +73,6 @@ function create2DMatrix(strMap){
   return counter;
 }
 
-create2DMatrix("..000.\n..000.\n..000.\n.0....\n..000.");
-create2DMatrix("0...0\n..0..\n0...0");
-create2DMatrix("0....\n.00..\n....0");
+IslandCount("..000.\n..000.\n..000.\n.0....\n..000."); //Returns 3
+IslandCount("0...0\n..0..\n0...0"); //Returns 5
+IslandCount("0....\n.00..\n....0"); //Returns 3
