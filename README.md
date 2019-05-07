@@ -6,4 +6,5 @@
 3. paste in console
 4. press enter
 
+Only finished IslandCount and SubSets&SuperSets
 it should be working properly with every input.
