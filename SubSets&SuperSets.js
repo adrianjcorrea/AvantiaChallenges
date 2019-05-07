@@ -71,7 +71,7 @@ function isSuperSet(a, b){
   //Checking parameter (a) with value of parameter(b) to not equal -1 for if its -1
   //Then automatically value dosent exist in parameter(b) and condicion is true.
   //If condicion is true automatically parameter (a) is SuperSet of parameter(b)
-  return b.every(val => a.indexOf(val) === -1)
+  return b.every(val => a.indexOf(val) !== -1)
 
 }
 
