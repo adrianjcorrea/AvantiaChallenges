@@ -53,12 +53,18 @@ const set2 = new Set([1, 2, 3, 'hello']);
 //This function will check if first paramater(A) set is subSet of second parameter(B).
 function isSubset(a, b){
   //Convert Sets to arrays.
+  a = Array.from(a);
+  b = Array.from(b);
 
+  //Checks if values of parameter(a) are all contained in parameter(b).
+  //If condicion is true automatically parameter (a) is subSet of parameter(b).
+  //If it dosent the is not a subSet
+  return a.every(val => b.indexOf(val) !== -1 )
 }
 
 //Invoking function to be runned
 isSubset(set1, set2), //Should return TRUE.
-isSubset(set1, set2), //Should return FALSE.
+isSubset(set2, set1), //Should return FALSE.
 
 //This function will check if first paramater(A) set is superSet of second parameter(B).
 function isSuperSet(a, b){
