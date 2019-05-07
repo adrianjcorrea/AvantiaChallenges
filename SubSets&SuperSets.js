@@ -63,8 +63,17 @@ isSubset(set1, set2), //Should return FALSE.
 //This function will check if first paramater(A) set is superSet of second parameter(B).
 function isSuperSet(a, b){
   //Cnvert Sets into an arrays.
+  a = Array.from(a);
+  b = Array.from(b);
+
+  //Checks if parameter(b) contains all values of parameter(a).
+  //Checking indexof value of parameter(a) with val of parameter(b).
+  //Checking parameter (a) with value of parameter(b) to not equal -1 for if its -1
+  //Then automatically value dosent exist in parameter(b) and condicion is true.
+  //If condicion is true automatically parameter (a) is SuperSet of parameter(b)
+  return b.every(val => a.indexOf(val) === -1)
 
 }
 
-isSuperSet(set1, set2) //Should return FALSE.
-isSuperSet(set2, set1) //Should return TRUE.
+isSuperSet(set1, set2) //Should return FALSE. set1 is NOT superSet of set2.
+isSuperSet(set2, set1) //Should return TRUE. set2 is superSet of set1.
