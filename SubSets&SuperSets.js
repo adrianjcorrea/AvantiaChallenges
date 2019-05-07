@@ -52,6 +52,7 @@ const set2 = new Set([1, 2, 3, 'hello']);
 
 //This function will check if first paramater(A) set is subSet of second parameter(B).
 function isSubset(a, b){
+  //Convert Sets to arrays.
 
 }
 
@@ -61,6 +62,7 @@ isSubset(set1, set2), //Should return FALSE.
 
 //This function will check if first paramater(A) set is superSet of second parameter(B).
 function isSuperSet(a, b){
+  //Cnvert Sets into an arrays.
 
 }
 
